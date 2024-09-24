@@ -20,7 +20,7 @@ export class UsersComponent implements OnInit {
   }
 
   onEdit(user : Iuser){
-    
+    this._user.onEdit(user)
   }
 
   onClone(username : string){

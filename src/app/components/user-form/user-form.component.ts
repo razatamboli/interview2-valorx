@@ -44,7 +44,7 @@ export class UserFormComponent implements OnInit {
   }
 
   onEdit(){
-    edit
+    this._user.editUser$.subscribe(res => console.log(res));
   }
 
 }

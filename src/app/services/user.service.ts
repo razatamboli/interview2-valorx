@@ -1232,6 +1232,6 @@ export class UserService {
   }
 
   onEdit(user : Iuser){
-    
+    this.editUser$.next(user);
   }
 }

@@ -1,0 +1,28 @@
+
+<div class="card my-4" *ngFor="let user of userArr">
+    <div class="card-header">
+        <h2>Employee Name : {{user.name}}</h2>
+        <hr>
+        <h4>Company : {{user.company}}</h4>
+
+        <p>Age : {{user.age}} </p>
+    </div>
+    <div class="card-body">
+        <p>Email : {{user.email}}</p>
+
+        <hr>
+
+        <p class="m-0">Contact Number : {{user.phone}}</p>
+    </div>
+    <div class="card-footer">
+        <p>About : {{user.about}}</p>
+
+        <hr>
+        
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-primary" (click)="onEdit(user)">Edit</button>
+            <button class="btn btn-primary" (click)="onClone(user.name)">Clone</button>
+            <button class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</div>

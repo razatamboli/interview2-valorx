@@ -1,0 +1,31 @@
+
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="userForm" (ngSubmit)="onUserForm()">
+            <div class="form-group">
+                <label for="username">UserName</label>
+                <input class="form-control" formControlName="username" type="text">
+            </div>
+            <div class="form-group">
+                <label for="age">User Age</label>
+                <input class="form-control" formControlName="age" type="text">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" formControlName="email" type="text">
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input class="form-control" formControlName="number" type="text">
+            </div>
+            <div class="form-group">
+                <label for="about">About</label>
+                <textarea class="form-control" formControlName="about" type="text"></textarea>
+            </div>
+
+            <div class="text-right">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
